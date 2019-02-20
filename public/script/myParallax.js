@@ -23,10 +23,6 @@ function MyParallax (wrapper, inner) {
             // k = wrapper.getBoundingClientRect().top / (windowHeight);
             // y = startInnerOffset - startInnerOffset * (1 - k);
 
-            console.log("koef = " + k);
-            console.log("startInnerOffset = " + startInnerOffset);
-            console.log("translateY = " + y);
-            console.log("wrapperBounding.bottom = " + wrapperBounding.bottom);
             inner.style.transform = 'translateY(' + y + 'px)';
         }
     });
