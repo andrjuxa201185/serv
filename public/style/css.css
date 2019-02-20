@@ -170,9 +170,10 @@ section.technology .row {
   @media screen and (max-width: 576px) {
       section.molecule h2 {
         font-size: 16px;
-        letter-spacing: 0px;
+        letter-spacing: 1px;
         text-indent: 0px;
         text-align: center;
+        font-weight: 200;
      }
       section.molecule canvas {
         background-color: black; }

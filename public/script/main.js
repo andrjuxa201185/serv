@@ -61,12 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     if (sumX<500 && sumY < 500){
-      canvas.style.cursor = "pointer";
-      canvas.addEventListener("click", boom);
-    } else {
-      canvas.style.cursor = "unset";
-      canvas.removeEventListener("click", boom);
-    }
+      boom(e);
+    } 
   });
 
   canvas.addEventListener("click", drowPoint);
