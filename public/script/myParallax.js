@@ -24,7 +24,7 @@ window.addEventListener("load", function(){
             new MyParallax(wrapper[i], inner[i]);
         }
     } else {
-        for (let i = 1; i < wrapper.length; i = i +1) {
+        for (let i = 1; i < wrapper.length; i = i + 2) {
             new MyParallax(wrapper[i], inner[i]);
         }
     }
