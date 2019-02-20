@@ -82,7 +82,8 @@ section.technology .row {
     width: 50%;
     overflow: hidden;
     height: 50vh;
-    position: relative; }
+    /* position: relative;  */
+  }
     section.technology .row .wrapper-parallax .inner-parallax {
       overflow: hidden;
       display: flex;
@@ -196,7 +197,7 @@ section.technology .row {
         letter-spacing: 2px;
         text-indent: 2px;
       }
-      section.technology .row .wrapper-parallax .inner-parallax {
+      /* section.technology .row .wrapper-parallax .inner-parallax {
         height: 100%;
-      }
+      } */
   }

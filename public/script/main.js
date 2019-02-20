@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const canvas = document.getElementById('canvas');
 
   canvas.setAttribute("height", window.innerHeight + 60);
