@@ -182,9 +182,18 @@ section.technology .row {
     section.technology .row {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row; }
+      flex-direction: row; 
+    }
       section.technology .row .wrapper-parallax {
-        width: 100%; }
-        section.technology .row .wrapper-parallax .inner-parallax img {
-          height: 40%; } 
+        width: 100%; 
       }
+        section.technology .row .wrapper-parallax .inner-parallax img {
+          height: 25%; 
+        } 
+      section.technology .row .wrapper-parallax button {
+        padding: 20px 30px;
+        font-size: 24px;
+        letter-spacing: 2px;
+        text-indent: 2px;
+      }
+  }
