@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function boom(e){
+    canvas.removeEventListener("mousemove", follow);
     for (let i = 0; i < 50; i++) {
       molecule.point[i].setMouseCoord(e);
       molecule.point[i].setParam(e);
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       molecule.point[i].speedX = -10 + Math.random() * 20;
       molecule.point[i].speedY = -10 + Math.random() * 20;
     }
-    canvas.removeEventListener("mousemove", follow);
+    // canvas.removeEventListener("mousemove", follow);
     setTimeout(()=>{
       canvas.addEventListener("mousemove", follow);
     }, 7000);
