@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   const canvas = document.getElementById('canvas');
 
-  canvas.setAttribute("height", window.innerHeight);
+  canvas.setAttribute("height", window.innerHeight + 50);
   canvas.setAttribute("width", window.innerWidth);
 
   let molecule = new Molecule(canvas, Point, 50);
