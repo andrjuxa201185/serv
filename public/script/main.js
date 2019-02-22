@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } 
   });
 
-  canvas.addEventListener("click", boom);
+  canvas.addEventListener("mousedown", boom);
 
   canvas.addEventListener("mouseup", function(){
     canvas.removeEventListener("mousemove", drowPoint);
