@@ -19,9 +19,9 @@ window.addEventListener("load", function(){
     let wrapper = document.getElementsByClassName('wrapper-parallax');
     let inner = document.getElementsByClassName('inner-parallax');
 
-    if (window.innerWidth > 768){
+    // if (window.innerWidth > 768){
         for (let i = 0; i < wrapper.length; i++) {
             new MyParallax(wrapper[i], inner[i]);
         }
-    } 
+    // } 
 });
