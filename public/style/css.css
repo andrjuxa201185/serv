@@ -180,12 +180,12 @@ section.technology .row {
      }
       section.molecule canvas {
         background-color: black; }
-    /* section.technology .row {
+    section.technology .row {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row;  */
-    /* } */
-      /* section.technology .row .wrapper-parallax {
+      flex-direction: row; 
+    }
+      section.technology .row .wrapper-parallax {
         width: 100%; 
       }
         section.technology .row .wrapper-parallax .inner-parallax img {
@@ -199,5 +199,5 @@ section.technology .row {
       }
       section.technology .row .wrapper-parallax .inner-parallax {
         height: 100%;
-      } */
+      }
   }
