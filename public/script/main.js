@@ -4,18 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
   canvas.setAttribute("height", window.innerHeight + 60);
   canvas.setAttribute("width", window.innerWidth);
 
-  let molecule = new Molecule(canvas, Point, 50);
+  // let molecule = new Molecule(canvas, Point, 50);
 
-  molecule.start(); 
+  // molecule.start(); 
 
-  document.addEventListener("scroll", function (){
-    let coord = canvas.getBoundingClientRect();
-    if (coord.bottom < 0){
-      molecule.stop();
-    } else {
-      molecule.start();
-    }
-  });
+  // document.addEventListener("scroll", function (){
+  //   let coord = canvas.getBoundingClientRect();
+  //   if (coord.bottom < 0){
+  //     molecule.stop();
+  //   } else {
+  //     molecule.start();
+  //   }
+  // });
 
 
 
