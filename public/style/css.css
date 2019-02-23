@@ -185,7 +185,7 @@ section.technology .row {
       flex-wrap: wrap;
       flex-direction: row; 
     }
-      /* section.technology .row .wrapper-parallax {
+      section.technology .row .wrapper-parallax {
         width: 100%; 
       }
         section.technology .row .wrapper-parallax .inner-parallax img {
@@ -199,5 +199,5 @@ section.technology .row {
       }
       section.technology .row .wrapper-parallax .inner-parallax {
         height: 100%;
-      } */
+      }
   }
