@@ -19,14 +19,14 @@ class Point {
       }
     }
 
-    setParam(){
+    setParam(widthCanvas = 1200, heightCanvas = 600){
       this.color = "rgb(128, 255, 0)";
       this.numberLine = 0;
       this.size = 2 + Math.random() * 5;
       this.speedX = -0.5 + Math.random() * 1;
       this.speedY = -0.5 + Math.random() * 1;
-      this.positionX = this.mouseX || Math.random() * 1550;
-      this.positionY = this.mouseY || Math.random() * 700;
+      this.positionX = this.mouseX || Math.random() * widthCanvas;
+      this.positionY = this.mouseY || Math.random() * heightCanvas;
       this.mouseX = undefined;
       this.mouseY = undefined;
     }
@@ -41,10 +41,11 @@ class Point {
     drowLine(ctx, x, y){
       if ((this.positionX == x) && (this.positionY == y)) return;
       ctx.beginPath();
+      ctx.strokeStyle = this.color;
+      ctx.lineWidth = 0.3;
       ctx.moveTo(this.positionX, this.positionY);
       ctx.lineTo(x , y);
-      ctx.lineTo(x + 1, y + 1);
-      ctx.fill();
+      ctx.stroke();
     }
 
     move(){
@@ -53,15 +54,15 @@ class Point {
     }
 
     checkPosition(elem){
-      let width = elem.clientWidth;
-      let height = elem.clientHeight;
-      if(this.positionX >= width+200 || this.positionX < -200 ) {
+      let width = elem.width;
+      let height = elem.height;
+      if(this.positionX >= width + (width / 100)  || this.positionX < -(width / 100) ) {
         // this.speedX = -this.speedX;
-        this.setParam();
+        this.setParam(width, height);
       } 
-      if(this.positionY >= height+200 || this.positionY < -200 ) {
+      if(this.positionY >= height + height / 100 || this.positionY < -(height / 100) ) {
         // this.speedY = -this.speedY;
-        this.setParam();
+        this.setParam(width, height);
       }     
     }
   }

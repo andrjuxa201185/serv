@@ -12,7 +12,7 @@ class Molecule {
 
     animate () {
         this.isAnimated = true;
-        this.ctx.clearRect(0, 0, this.canvas.clientWidth, this.canvas.clientHeight); 
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height); 
         for (let i = 0; i < this.numOfpoint; i++) {
             if (this.point[i]) {
                 this.point[i].drowPoint(this.ctx);
@@ -44,10 +44,11 @@ class Molecule {
 
     start () {
         if (this.isAnimated) return;
-        let t = 500;
+        let widthCanvas = this.canvas.width;
+        let heightCanvas = this.canvas.height;
         for (let i = 0; i < this.numOfpoint; i++) {
             this.point[i] = new this.figure();
-            this.point[i].setParam();
+            this.point[i].setParam(widthCanvas, heightCanvas);
         }
         this.animate();
     } 
